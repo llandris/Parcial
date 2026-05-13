@@ -2,9 +2,14 @@
   "name": "parcial",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {     
+    "build": "tsc",     
+    "dev": "nodemon src/server.ts --exec ts-node",     
+    "start": "node dist/server.js",     
+    "populate": "ts-node src/faker/populate_data.ts"   
   },
+  "type": "commonjs",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/llandris/Parcial.git"
